@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCodeNet
 {
@@ -10,6 +6,8 @@ namespace LeetCodeNet
    {
       static void Main(string[] args)
       {
+         BestTimeToBuyAndSellStock.TestClient.DoDirt();
+         Console.ReadLine();
       }
    }
 }
