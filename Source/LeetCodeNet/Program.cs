@@ -1,13 +1,7 @@
-﻿using System;
-
-namespace LeetCodeNet
+﻿namespace LeetCodeNet
 {
    class Program
    {
-      static void Main(string[] args)
-      {
-         BestTimeToBuyAndSellStock.TestClient.DoDirt();
-         Console.ReadLine();
-      }
+      static void Main(string[] args) { }
    }
 }
