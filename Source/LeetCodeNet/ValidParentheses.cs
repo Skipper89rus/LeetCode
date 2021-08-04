@@ -11,29 +11,26 @@ namespace LeetCodeNet.ValidParentheses
    /// </summary>
    public class Solution
    {
+      private readonly Dictionary<char, char> _openToClose = new Dictionary<char, char>()
+      {
+         { '(', ')' },
+         { '{', '}' },
+         { '[', ']' },
+      };
+
       public bool IsValid(string s)
       {
-         bool isOpenChar(char c) => c == '(' || c == '{' || c == '[';
-         char getCloseChar(char c)
-         {
-            switch (c)
-            {
-               case '(': return ')';
-               case '{': return '}';
-               case '[': return ']';
-            }
-            return '\0';
-         }
-
          var opened = new Stack<char>();
          foreach (char c in s)
          {
             if (isOpenChar(c))
                opened.Push(c);
-            else if (opened.Count == 0 || getCloseChar(opened.Pop()) != c)
+            else if (opened.Count == 0 || _openToClose[opened.Pop()] != c)
                return false;
          }
          return opened.Count == 0;
       }
+
+      bool isOpenChar(char c) => c == '(' || c == '{' || c == '[';
    }
 }
