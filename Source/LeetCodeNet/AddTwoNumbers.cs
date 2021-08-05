@@ -11,7 +11,7 @@
    {
       public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
       {
-         int carry = 0;
+         int sum = 0;
          ListNode cur1 = l1;
          ListNode cur2 = l2;
 
@@ -19,18 +19,19 @@
          ListNode resCur = resRoot;
          while (cur1 != null || cur2 != null)
          {
-            int sum = (cur1?.val ?? 0) + (cur2?.val ?? 0) + carry;
-            carry = sum / 10;
+            sum += (cur1?.val ?? 0) + (cur2?.val ?? 0);
 
             resCur.next = new ListNode(sum % 10);
             resCur = resCur.next;
 
             cur1 = cur1?.next;
             cur2 = cur2?.next;
+
+            sum = sum > 9 ? 1 : 0;
          }
 
-         if (carry > 0)
-            resCur.next = new ListNode(carry);
+         if (sum > 0)
+            resCur.next = new ListNode(sum);
 
          return resRoot.next;
       }
