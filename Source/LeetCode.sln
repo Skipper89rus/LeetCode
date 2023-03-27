@@ -1,26 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30225.117
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeNet", "LeetCodeNet\LeetCodeNet.csproj", "{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeNetTests", "LeetCodeNetTests\LeetCodeNetTests.csproj", "{471732D9-E989-497E-B7E7-DA5A1E581D54}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCodeCpp", "LeetCodeCpp\LeetCodeCpp.vcxproj", "{3673DE64-CD33-4981-80B5-E3E3A515E9C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Debug|x64.ActiveCfg = Debug|x64
+		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Debug|x64.Build.0 = Debug|x64
+		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Release|x64.ActiveCfg = Release|x64
+		{CBF1FD14-90CD-4B0A-8E0D-32DA2D5F693D}.Release|x64.Build.0 = Release|x64
+		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Debug|x64.ActiveCfg = Debug|x64
+		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Debug|x64.Build.0 = Debug|x64
+		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Release|x64.ActiveCfg = Release|x64
+		{471732D9-E989-497E-B7E7-DA5A1E581D54}.Release|x64.Build.0 = Release|x64
+		{3673DE64-CD33-4981-80B5-E3E3A515E9C9}.Debug|x64.ActiveCfg = Debug|x64
+		{3673DE64-CD33-4981-80B5-E3E3A515E9C9}.Debug|x64.Build.0 = Debug|x64
+		{3673DE64-CD33-4981-80B5-E3E3A515E9C9}.Release|x64.ActiveCfg = Release|x64
+		{3673DE64-CD33-4981-80B5-E3E3A515E9C9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
